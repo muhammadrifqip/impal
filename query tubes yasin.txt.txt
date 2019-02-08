@@ -1,0 +1,18 @@
+Muhammad Yasin Fajari
+1301164666
+
+create table notifikasi(
+   no_obat varchar(20),
+   kadaluarsa_obat date,
+   foreign key(no_obat) references obat(no_obat)
+)
+
+create table obat(
+   no_Obat varchar(20),
+   nama_Obat varchar(50),
+   jenis_Obat enum('Tablet','Serbuk','Pil','Kapsul','Larutan','Salep','Tetes'),
+   kadaluarsa_Obat date,
+   stok_Obat int(5),
+   harga_Obat int(10),
+   primary key(no_Obat)
+)
