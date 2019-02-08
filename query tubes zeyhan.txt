@@ -1,0 +1,22 @@
+CREATE TABLE apoteker (
+	id_Apoteker varchar(15),
+	no_Lisensi_Apoteker varchar(20) DEFAULT NULL,
+	nama_Apoteker varchar(50) DEFAULT NULL,
+	alamat_Apoteker varchar(50) DEFAULT NULL,
+	no_Telp_Apoteker varchar(15),
+	jenis_Kelamin_Apoteker enum('Laki-laki','Perempuan'),
+	email_Apoteker varchar(50),
+	PRIMARY KEY (id_Apoteker)
+	);
+
+CREATE TABLE apotek (
+	nama_Apotek varchar(20),
+	alamat_Apotek varchar(50),
+	lisensi_Apotek varchar(20),
+	no_Telp_Apotek varchar(15),
+	email_Apotek varchar(50),
+	PRIMARY KEY (lisensi_Apotek)
+	);
+
+
+
