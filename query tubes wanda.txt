@@ -1,0 +1,14 @@
+Wanda Yogei Wardani
+1301164691
+
+create table login(
+   username varchar(20),
+   password varchar(20),
+   primary key(username)
+)
+
+create table notifikasi(
+   no_obat varchar(20),
+   kadaluarsa_obat date,
+   foreign key(no_obat) references obat(no_obat)
+)
