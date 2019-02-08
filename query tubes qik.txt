@@ -1,0 +1,8 @@
+CREATE TABLE kepala_apotek(
+  id_Kepala_Apotek varchar(15),
+  nama_Kepala_Apotek varchar(50),
+  alamat_Kepala_Apotek varchar(50),
+  no_Telp_Kepala_Apotek varchar(50),
+  email_Kepala_Apotek varchar(30),
+  PRIMARY KEY (id_Kepala_Apotek)	
+)
