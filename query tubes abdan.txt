@@ -1,0 +1,11 @@
+Abdan Hafidh Ahnafi
+1301164727
+
+CREATE TABLE transaksi(
+	no_Transaksi varchar(20),
+	tanggal_Transaksi date,
+	no_Obat varchar(20),
+	total_harga int(10),
+	primary key(no_Transaksi),
+	foreign key(no_Obat) references obat(no_Obat)
+);
